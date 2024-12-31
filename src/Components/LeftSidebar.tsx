@@ -176,6 +176,28 @@ const LeftSidebar = () => {
               <span className="absolute left-[-6px] top-1/2 -translate-y-1/2 h-2 w-2 rotate-45 bg-gray-800"></span>
             </span>
           </Link>
+          <Link
+            href="/contact"
+            className="group relative rounded-xl  p-2 z-50 hover:bg-gray-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13.84 14.31c-.295.522-.517 1.09-.659 1.69h-9.181v-.417c-.004-1.112.044-1.747 1.324-2.043 1.402-.324 2.787-.613 2.121-1.841-1.972-3.637-.562-5.699 1.555-5.699 2.077 0 3.521 1.985 1.556 5.699-.647 1.22.688 1.51 2.121 1.841.672.155 1 .407 1.163.77zm-.815 3.69h-11.025v-14h20v7.5c.749.312 1.424.763 2 1.316v-10.816h-24v18h13.5c-.26-.623-.421-1.296-.475-2zm6.975-9h-4v2h4v-2zm-4-1h4v-2h-4v2zm8 9.5c0 2.485-2.018 4.5-4.5 4.5-2.484 0-4.5-2.015-4.5-4.5s2.016-4.5 4.5-4.5c2.482 0 4.5 2.015 4.5 4.5zm-2-.5h-2v-2h-1v2h-2v1h2v2h1v-2h2v-1z" />
+            </svg>
+
+            <div className="absolute inset-y-0 left-12 hidden items-center group-hover:flex">
+              <div className="relative whitespace-nowrap rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 drop-shadow-lg">
+                <div className="absolute inset-0 -left-1 flex items-center">
+                  <div className="h-2 w-2 rotate-45 bg-white" />
+                </div>
+                Contacts
+              </div>
+            </div>
+          </Link>
         </nav>
       </aside>
     </div>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import LeadForm from "@/Components/LeadForm";
 import LeftSidebar from "@/Components/LeftSidebar";
+
 const LeadsPage: React.FC = () => {
   const [leads, setLeads] = useState([]);
 
@@ -26,6 +27,7 @@ const LeadsPage: React.FC = () => {
 
   useEffect(() => {
     fetchLeads();
+    // fetchContacts();
   }, []);
 
   return (
@@ -59,6 +61,9 @@ const LeadsPage: React.FC = () => {
                           {lead.name}
                         </p>
                         <p className="text-sm text-gray-500">{lead.status}</p>
+                        <p className="text-sm text-gray-500">
+                          {lead.callFrequency} days
+                        </p>
                       </div>
                       <button className="text-sm font-medium text-blue-600 hover:underline">
                         View Details
